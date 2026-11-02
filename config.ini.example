@@ -1,0 +1,6 @@
+[database]
+host = localhost
+database = shoestore_db
+user = postgres
+password = YOUR_PASSWORD
+port = 5432

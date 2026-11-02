@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Виртуальное окружение
+venv/
+.venv/
+
+# Настройки и секреты
+config.ini
+
+# Временные файлы
+*.log
+.DS_Store
+Thumbs.db
+
+# Файлы Visual Studio Code
+.vscode/
+
+# Сборка
+dist/
+build/
+*.spec
