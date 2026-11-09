@@ -19,7 +19,7 @@ class ShoeStoreApp:
     
     def setup_main_window(self):
         # фиксированный размер окна
-        self.root.title("ShoeStoreApp — Магазин обуви")
+        self.root.title("Система управления магазином обуви — ООО «Обувь»")
         self.root.geometry("1000x700")
         self.root.resizable(False, False)  # запрещение изменения размера
         self.root.configure(bg='white')
