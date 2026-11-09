@@ -69,7 +69,7 @@ class AuthWindow:
         password = self.password_entry.get()
         
         if not login or not password:
-            messagebox.showerror("Ошибка", "Введите логин и пароль")
+            messagebox.showerror("Ошибка авторизации", "Пользователь не найден. Проверьте правильность логина и пароля.")
             return
         
         user = self.db.get_user_by_credentials(login, password)
