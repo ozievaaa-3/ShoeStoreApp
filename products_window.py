@@ -4,6 +4,8 @@ from tkinter import ttk
 from PIL import Image, ImageTk
 import os
 
+DISCOUNT_THRESHOLD = 15
+
 class ProductsWindow:
     def __init__(self, root, app):
         self.root = root
@@ -285,7 +287,7 @@ class ProductsWindow:
     
     def create_product_card(self, product):
         bg_color = '#FFFFFF'
-        if product.discount > 15:
+        if product.discount > DISCOUNT_THRESHOLD:
             bg_color = '#2E8B57'
         elif product.quantity == 0:
             bg_color = '#ADD8E6'
