@@ -285,7 +285,7 @@ class ProductsWindow:
     
     def create_product_card(self, product):
         bg_color = '#FFFFFF'
-        if product.discount > 15:
+        if product.discount > 20: # Новый порог скидки
             bg_color = '#2E8B57'
         elif product.quantity == 0:
             bg_color = '#ADD8E6'
