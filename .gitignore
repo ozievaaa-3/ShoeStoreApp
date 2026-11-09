@@ -1,24 +1,24 @@
 # Python
 __pycache__/
 *.py[cod]
-*.pyo
 
-# Виртуальное окружение
+# Виртуальные окружения
 venv/
 .venv/
+env/
 
-# Настройки и секреты
-config.ini
-
-# Временные файлы
-*.log
-.DS_Store
-Thumbs.db
-
-# Файлы Visual Studio Code
+# Среды разработки
+.idea/
 .vscode/
 
-# Сборка
-dist/
+# Результаты сборки
 build/
-*.spec
+dist/
+.dist/
+
+# Локальные настройки и секреты
+config.ini
+.env
+
+# Логи
+*.log
