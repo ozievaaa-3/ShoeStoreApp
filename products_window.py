@@ -4,7 +4,7 @@ from tkinter import ttk
 from PIL import Image, ImageTk
 import os
 
-DISCOUNT_THRESHOLD = 15
+DISCOUNT_THRESHOLD = 20
 
 class ProductsWindow:
     def __init__(self, root, app):
