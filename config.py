@@ -1,22 +1,20 @@
-# config.py
-from configparser import ConfigParser
-from pathlib import Path
+import configparser
+import os
 
-config = ConfigParser()
+config = configparser.ConfigParser()
+config_path = os.path.join(os.path.dirname(__file__), "config.ini")
 
-config_path = Path(__file__).resolve().parent / "config.ini"
-
-if not config_path.exists():
+if not os.path.exists(config_path):
     raise FileNotFoundError(
-        "Файл config.ini не найден. Создайте его на основе config.ini.example"
+        "Файл config.ini не найден. Создайте его по образцу config.ini.example"
     )
 
 config.read(config_path, encoding="utf-8")
 
 DB_CONFIG = {
-    'host': config.get('database', 'host'),
-    'database': config.get('database', 'database'),
-    'user': config.get('database', 'user'),
-    'password': config.get('database', 'password'),
-    'port': config.getint('database', 'port')
+    "host": config["database"]["host"],
+    "database": config["database"]["database"],
+    "user": config["database"]["user"],
+    "password": config["database"]["password"],
+    "port": config["database"].getint("port")
 }
