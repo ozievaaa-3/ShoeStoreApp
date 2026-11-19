@@ -97,3 +97,21 @@
 ## Автор
 
 Озиева Амира, ПКС-41.
+## Запуск PostgreSQL через Docker Compose
+
+### Предварительные требования
+
+- Docker Desktop;
+- Docker Engine;
+- Docker Compose v2.
+
+### Настройка
+
+1. Создать файл `.env` на основе `.env.example`.
+2. Указать локальные параметры PostgreSQL.
+3. Не публиковать файл `.env` и настоящий пароль.
+
+### Запуск
+
+```bash
+docker compose up --build -d
